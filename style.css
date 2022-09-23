@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+.container {
+  background-image: url(./images/pattern-background-desktop.svg);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  background-size: contain;
+}
+
+.card {
+  width: 450px;
+  height: 700px;
+  /* border: 2px solid; */
+  border-radius: 20px;
+  background-color: white;
+}
+.card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+main {
+  height: 375px;
+  width: 350px;
+  margin: 50px;
+}
+main > * {
+  width: 350px;
+}
+
+.card__info {
+  height: 120px;
+  text-align: center;
+}
+.card__info h1 {
+  height: 32px;
+}
+.card__info p {
+  margin-top: 25px;
+  line-height: 25px;
+  color: var(--desaturated-blue);
+}
+
+.card__annual {
+  height: 100px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid; */
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 50px 0;
+}
+.plan-details {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  /* border: 1px solid; */
+  margin-left: -50px;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#annual-plan {
+  font-weight: 900;
+}
+#change {
+  font-weight: 900;
+}
+
+footer button {
+  width: 350px;
+  height: 50px;
+  background-color: var(--bright-blue);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+
+button.payment {
+  box-shadow: #f2f3f6 0px 20px 4px -1px;
+}
+footer .cancel-order {
+  text-align: center;
+  width: 350px;
+  height: 45px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+footer p {
+  display: inline-block;
+  font-weight: 700;
+}
+
+footer p:hover{
+    cursor: pointer;
+}
